@@ -25,10 +25,13 @@ Projeto desenvolvido para o 1º semestre de faculdade para monitoramento de nív
 Você pode testar o projeto no Tinkercad através do link abaixo:
 https://www.tinkercad.com/things/4Y7NTPPqwIP/editel?sharecode=E6sdJblrUjd_7hX5M4QGha4rf-ev4ygBzAggtMS9vUs
 
-Nível (%),Estado,LED,Buzzer
-0 - 50,Seguro,Verde (Pisca Lento),Desligado
-51 - 70,Atenção,Amarelo (Pisca Médio),Desligado
-71 - 90,Alerta,Vermelho (Pisca Rápido),Beep Intermitente
-91 - 100,Crítico,Vermelho (Muito Rápido),Beep Rápido
----
+### 📊 Lógica de Funcionamento
+
+| Nível (%) | Estado | LED | Buzzer |
+| :--- | :--- | :--- | :--- |
+| **0 - 50** | Seguro | Verde (Pisca Lento) | Desligado |
+| **51 - 70** | Atenção | Amarelo (Pisca Médio) | Desligado |
+| **71 - 90** | Alerta | Vermelho (Pisca Rápido) | Beep Intermitente |
+| **91 - 100** | Crítico | Vermelho (Muito Rápido) | Beep Rápido |
+
 Desenvolvido por Victor Nastri
