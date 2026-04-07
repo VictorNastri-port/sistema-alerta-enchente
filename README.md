@@ -2,6 +2,17 @@
 
 Projeto desenvolvido para o 1º semestre de faculdade para monitoramento de níveis de reservatórios e prevenção de enchentes.
 
+## 📌 Motivação e Impacto Social
+
+Este projeto foi idealizado com foco na **prevenção de desastres naturais**, especificamente as inundações repentinas. Cidades como **Sorocaba/SP** enfrentam desafios constantes com o transbordamento de rios e córregos em períodos de chuva intensa, causando danos materiais e riscos à vida.
+
+O objetivo deste sistema é oferecer uma solução de **baixo custo para monitoramento preventivo**. Ao instalar sensores em pontos estratégicos, é possível:
+* **Alertar a população local** visual e sonoramente antes da água atingir níveis críticos.
+* **Coletar dados** para órgãos de monitoramento.
+* **Agilizar a tomada de decisão** para interdição de vias alagadas.
+
+*Tecnologia aplicada a serviço da segurança pública e resiliência urbana.*
+
 ## 🚀 Funcionalidades
 - Medição de distância em tempo real via sensor HC-SR04.
 - Conversão de distância para porcentagem de nível.
