@@ -4,8 +4,10 @@ int cm = 0;
 #define amarelo 9
 #define verde 3
 #define buzzer 8
-
-
+const int seguro = 2;
+const int atencao = 50;
+const int alerta = 70;
+const int critico = 91;
 void setup()
 { 
     pinMode(12, OUTPUT); // trigger
@@ -27,16 +29,20 @@ void loop()
   delayMicroseconds(10);
   digitalWrite(12, LOW);
    
-  
   cm = pulseIn(10, HIGH);
   
   cm = cm/58; 
   
-  Serial.println(cm);
-  
   cm = map(cm, 400, 2, 0, 100);
   
-  if(cm >= 2 && cm <= 50){
+  bool estadoSeguro   = (cm >= seguro  && cm < atencao);
+  bool estadoAtencao  = (cm >= atencao && cm < alerta);
+  bool estadoAlerta   = (cm >= alerta  && cm < critico);
+  bool estadoCritico  = (cm >= critico && cm <= 100);
+  
+  Serial.println(cm);
+  
+  if(cm >= seguro && cm < atencao){
    digitalWrite(verde, HIGH);
    delay(1000);
    digitalWrite(verde, LOW);
@@ -46,7 +52,7 @@ void loop()
       digitalWrite(vermelho, LOW);
   }
   
-  if(cm > 50 && cm <=70){
+  if(cm >= atencao && cm < alerta){
     digitalWrite(amarelo, HIGH);
     delay(500);
     digitalWrite(amarelo, LOW);
@@ -55,7 +61,7 @@ void loop()
     digitalWrite(verde, LOW);
     digitalWrite(vermelho, LOW);
   }
-    if(cm > 70 && cm <= 90){
+    if(cm >= alerta && cm < critico){
       digitalWrite(vermelho, HIGH);
         delay(200);
         digitalWrite(vermelho, LOW);
@@ -68,7 +74,7 @@ void loop()
       digitalWrite(amarelo, LOW);
     }
       
-      if( cm >90 && cm <= 100){
+      if( cm >=critico && cm <= 100){
       digitalWrite(vermelho, HIGH);
         delay(100);
         digitalWrite(vermelho, LOW);
