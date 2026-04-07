@@ -34,7 +34,7 @@ O objetivo deste sistema é oferecer uma solução de **baixo custo para monitor
 
 ## 🔗 Simulação
 Você pode testar o projeto no Tinkercad através do link abaixo:
-https://www.tinkercad.com/things/4Y7NTPPqwIP/editel?sharecode=E6sdJblrUjd_7hX5M4QGha4rf-ev4ygBzAggtMS9vUs
+https: https://www.tinkercad.com/things/4Y7NTPPqwIP-upx-controle-de-enchente-
 
 ### 📊 Lógica de Funcionamento
 
